@@ -33,14 +33,12 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 4 put your implementation here
-        for(int i = 0; i < input.length(); i++) {
-            char result = input.charAt(i);
-            result++;
-            String input2 = input;
-            input2.charAt(i) = result;
-            input = input2;
+        char[] newName = input.toCharArray();
+        for(int i = 0; i < newName.length; i++) {
+           int x = newName[i] + 1;
+           newName[i] = (char)x;
         }
-      return input;
+      return new String(newName);
     }
     
     /**
