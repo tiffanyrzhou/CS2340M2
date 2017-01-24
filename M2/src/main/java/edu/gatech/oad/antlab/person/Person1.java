@@ -31,14 +31,14 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  if(input == NULL) {
-	  	return NULL;
+	  if(input == null) {
+	  	return null;
 	  }
 	  if(input.length() == 2 || input.length() == 1){
 	  	return input;
 	  }
 	  String modString = input.substring(2);
-	  modstring = modString + input.substring(0,1);
+	  modString = modString + input.substring(0,1);
 	  return modString;
 	}
 
