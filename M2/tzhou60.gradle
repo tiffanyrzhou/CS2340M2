@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+defaultTasks 'jar'
+
+dependencies{
+    compile files ('lib/resources.jar')
+}
+jar{
+    manifest{
+        attributes(
+            'Implementation-Title': 'Gradle Bulid M2' ,
+            'Implementation-Version': '1.0',
+            'Main-Class': 'java/edu/gatech/oad/antlab/pkg1',
+            'Class-Path': '../../lib/resources.jar'
+        )
+    }
+}
