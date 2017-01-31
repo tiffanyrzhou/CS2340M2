@@ -84,6 +84,7 @@ import edu.gatech.oad.antlab.pkg2.*;
 
     /**
      * entry point for the program
+     * @param args the command line arguments passed to this program
      */
      public static void main(String[] args) {
 
